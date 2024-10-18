@@ -12,5 +12,8 @@
     "Video"
   ],
   "author": "Soam Tripathy",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
 }
