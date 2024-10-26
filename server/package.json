@@ -2,9 +2,10 @@
   "name": "server",
   "version": "1.0.0",
   "description": "backend for video generator from URL",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "dev"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "keywords": [
     "AI",
@@ -14,6 +15,13 @@
   "author": "Soam Tripathy",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.1"
+    "@gptscript-ai/gptscript": "^0.9.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "uniqid": "^5.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
   }
 }
